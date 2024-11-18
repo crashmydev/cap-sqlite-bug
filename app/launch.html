@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script>
+      window['sap-ushell-config'] = {
+        defaultRenderer: 'fiori2',
+        applications: {
+          'authors-display': {
+            title: 'Display Authors',
+            description: '',
+            additionalInformation:
+              'SAPUI5.Component=authors',
+            applicationType: 'URL',
+            url: '/authors/webapp',
+            properties: {
+              icon: 'sap-icon://document',
+            },
+            navigationMode: 'embedded',
+          },
+          'books-display': {
+            title: 'Display Books',
+            description: '',
+            additionalInformation:
+              'SAPUI5.Component=books',
+            applicationType: 'URL',
+            url: '/books/webapp',
+            properties: {
+              icon: 'sap-icon://vertical-bar-chart',
+            },
+            navigationMode: 'embedded',
+          },
+          'products-display': {
+            title: 'Display Products',
+            description: '',
+            additionalInformation:
+              'SAPUI5.Component=products',
+            applicationType: 'URL',
+            url: '/products/webapp',
+            properties: {
+              icon: 'sap-icon://document',
+            },
+            navigationMode: 'embedded',
+          }
+        },
+        renderers: {
+          fiori2: {
+            componentData: {
+              config: {
+                enableMergeAppAndShellHeaders: true,
+                search: 'hidden',
+              },
+            },
+          },
+        },
+        services: {
+          NavTargetResolution: {
+            config: {
+              runStandaloneAppFolderWhitelist: {
+                '*': true,
+              },
+              allowTestUrlComponentConfig: true,
+              enableClientSideTargetResolution: true,
+            },
+          },
+          EndUserFeedback: {
+            adapter: {
+              config: {
+                enabled: true,
+              },
+            },
+          },
+        },
+        bootstrapPlugins: {
+          RuntimeAuthoringPlugin: {
+            component: 'sap.ushell.plugins.rta',
+            config: {
+              validateAppVersion: false,
+            },
+          },
+          PersonalizePlugin: {
+            component: 'sap.ushell.plugins.rta-personalize',
+            config: {
+              validateAppVersion: false,
+            },
+          },
+        },
+      };
+    </script>
+    <script
+      src="https://ui5.sap.com/1.120.20/test-resources/sap/ushell/bootstrap/sandbox.js"
+      id="sap-ushell-bootstrap"
+    ></script>
+    <script
+      id="sap-ui-bootstrap"
+      src="https://ui5.sap.com/1.120.20/resources/sap-ui-core.js"
+      data-sap-ui-libs="sap.m, sap.ushell, sap.collaboration, sap.ui.layout, sap.ui.core, sap.ui.mdc, sap.fe.core, sap.ui.fl"
+      data-sap-ui-theme="sap_fiori_3"
+      data-sap-ui-compatVersion="edge"
+      data-sap-ui-resourceroots='{
+        "authors": "./authors/webapp",
+        "books": "./books/webapp",
+        "products": "./products/webapp"
+			}'
+      data-sap-ui-async="true"
+      data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+      data-sap-ui-frameOptions="allow"
+    ></script>
+    <script>
+      sap.ui.require([
+        'sap/ui/core/Core',
+        'sap/ushell/Container',
+        'sap/ui/fl/FakeLrepConnector'],
+        (Core, Container, FakeLrepConnector) => {
+          Core.ready().then(() => {
+            FakeLrepConnector.enableFakeConnector();
+            Container.createRenderer(undefined, true).then((control) => {
+              control.placeAt('content');
+            });
+          })
+        }
+      );
+    </script>
+  </head>
+  <body class="sapUiBody" id="content"></body>
+</html>

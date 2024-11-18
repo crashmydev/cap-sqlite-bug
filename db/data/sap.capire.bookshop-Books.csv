@@ -1,0 +1,17 @@
+ID,title,descr,author_authorID,genre_ID,stock,price,currency_code,createdAt,createdBy,modifiedAt,modifiedBy
+1112,The New York Trilogy,A series of novels by Paul Auster,1,1,10,15.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+2222,The Shining,A horror novel by Stephen King,2,2,5,9.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+3333,The Neverending Story,A fantasy novel by Michael Ende,3,3,8,12.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+4444,Siddhartha,A novel by Hermann Hesse,4,4,7,10.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+5555,Death in Venice,A novella by Thomas Mann,5,5,6,8.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+6,1984,A dystopian novel by George Orwell,6,6,12,14.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+7,Brave New World,A dystopian novel by Aldous Huxley,7,6,9,13.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+8,To Kill a Mockingbird,A novel by Harper Lee,8,7,11,11.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+9,The Great Gatsby,A novel by F. Scott Fitzgerald,9,8,10,10.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+10,Moby Dick,A novel by Herman Melville,10,9,7,12.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+11,War and Peace,A novel by Leo Tolstoy,11,10,8,19.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+12,Crime and Punishment,A novel by Fyodor Dostoevsky,12,10,6,17.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+13,The Catcher in the Rye,A novel by J.D. Salinger,13,7,9,10.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+14,The Hobbit,A fantasy novel by J.R.R. Tolkien,14,3,15,14.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+15,The Lord of the Rings,A fantasy novel by J.R.R. Tolkien,14,3,10,29.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe
+16,The Alchemist,A novel by Paulo Coelho,15,4,12,9.99,USD,2020-06-01T12:00:00.000Z,John Doe,2020-06-01T12:00:00.000Z,John Doe

@@ -1,0 +1,50 @@
+{
+  "name": "fiori_bug_repro",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap-cloud-sdk/http-client": "^3.21.0",
+    "@sap-cloud-sdk/resilience": "^3.21.0",
+    "@sap/cds": "^8",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.6",
+    "@cap-js/sqlite": "^1",
+    "@sap/ux-specification": "^1.120.19"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-authors": "cds watch --open authors/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-books": "cds watch --open books/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-products": "cds watch --open products/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "requires": {
+      "auth": {
+        "kind": "mocked",
+        "users": {
+          "user": {
+            "password": "pass",
+            "roles": [
+              "admin"
+            ]
+          }
+        }
+      },
+      "NORTHWIND": {
+        "kind": "odata",
+        "model": "srv/external/NORTHWIND"
+      },
+      "destinations": true
+    }
+  },
+  "sapux": [
+    "app/authors",
+    "app/books",
+    "app/products"
+  ]
+}
